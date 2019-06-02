@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9e9e9e</color>
+    <color name="colorTextDialog">#78909C</color>
+    <color name="colorPrimaryDark">#3949ab</color>
+    <color name="colorAccent">#0ce610</color><!-->color of the all checkboxes in the app<!-->
+    <color name="alertcolor">#ffffff</color>
+    <color name="checkbox">#e4e4e4</color>
+    <color name="colorToolbarUnderline">#9e9e9e</color>
+    <color name="colorMusicItem">#c2ededed</color>
+    <color name="colorTabTexts">#fafafa</color>
+    <color name="colorMusicController">#64dd17</color>
+    <color name="colorLightWhite">#e6ffffff</color>
+    <color name="colortabselected">#8f3e858f</color>
+    <color name="colorRipple">#80D8FF</color>
+    <color name="colorCabTransparent">#00ffffff</color>
+    <color name="colorToolb_Menu_Item">#efffffff</color>
+    <color name="foreground_material_light">#126b93</color> 
+</resources>
+

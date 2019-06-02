@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/_Linear_Playlist_item"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:id="@+id/_Img_Add_Item"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center"
+    android:src="@drawable/ic_add_circle_gray_24dp"
+    />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/_Fram_Items">
+        <ImageView
+            android:id="@+id/_Img_PlayList"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/_Txt_PlayList_Count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/textviewbackgroun"
+            android:gravity="center"
+            android:text="15"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/_Txt_Playlist_Name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|bottom"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorLightWhite"
+        android:gravity="center"
+        android:text="Playlistname"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="#424242"
+    tools:context="com.example.cor.mjplayer.Music_Detail">
+
+    <ImageView
+        android:id="@+id/_Img_Background_Lock"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.5">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/_Lrc_List_Lock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_background"
+                android:orientation="vertical"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/_Img_Lrc_Lock"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="25dp"
+                android:background="@drawable/lrc"
+                android:clickable="true" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#484848"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/_Txt_Music_Lock_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="sdl;fsj"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/_Txt_Artis_Lock_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="M.shajarian"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="1.5">
+
+                <ImageView
+                    android:id="@+id/_Img_BackLock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/myripple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_fast_rewind_white" />
+
+                <ImageView
+                    android:id="@+id/_Img_Play_Stop_Lock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/myripple"
+                    android:clickable="true"
+                    android:src="@drawable/ic_play_arrow_black" />
+
+                <ImageView
+                    android:id="@+id/_Img_NextLock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/myripple"
+                    android:clickable="true"
+
+                    android:src="@drawable/ic_fast_forward_white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

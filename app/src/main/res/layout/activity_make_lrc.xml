@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cor.mjplayer.MakeLrcActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/_Toolb_MakeLyric"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/_Lrc_List_Lrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/white_background"
+            android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@color/colorToolbarUnderline"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <it.moondroid.seekbarhint.library.SeekBarHint
+                    android:id="@+id/_seek_lentgh_Lrc"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.25" />
+
+                <TextView
+                    android:id="@+id/_Txt_lentgh_Lrc"
+                    android:layout_width="450dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.75"
+                    android:text="2:25 / 3:15"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:id="@+id/_Img_BackDetail_Lrc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/myripple"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_fast_rewind_white" />
+
+                <ImageView
+                    android:id="@+id/_Img_Play_Stop_Detail_Lrc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/myripple"
+                    android:clickable="true"
+                    android:src="@drawable/ic_play_arrow_black" />
+
+                <ImageView
+                    android:id="@+id/_Img_NextDetail_Lrc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/myripple"
+                    android:clickable="true"
+
+                    android:src="@drawable/ic_fast_forward_white" />
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/_Img_LoadFile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/myripple"
+                        android:clickable="true"
+                        android:src="@drawable/ic_file_upload_white_24dp" />
+
+                    <ImageView
+                        android:id="@+id/_Img_Done"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/myripple"
+                        android:src="@drawable/ic_done_white_24dp" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
